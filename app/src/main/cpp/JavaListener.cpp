@@ -43,6 +43,7 @@ void JavaListener::onError(int threadType, int code, const char *msg) {
         env->DeleteLocalRef(jmsg);//析构字符串
 
         jvm->DetachCurrentThread();
+
     }
     else if (threadType == 1)
     {
